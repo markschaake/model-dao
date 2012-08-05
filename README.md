@@ -1,0 +1,1 @@
+This library is meant to be a general interface for peristence of models, providing a default Map - based persistence implementation.
