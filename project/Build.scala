@@ -1,7 +1,5 @@
 import sbt._
 import Keys._
-import org.ensime.sbt.Plugin.Settings.ensimeConfig
-import org.ensime.sbt.util.SExp._
 
 object AppBuild extends Build {
 
@@ -16,12 +14,6 @@ object AppBuild extends Build {
 
       organization := "markschaake",
       version := "0.1.0-SNAPSHOT",
-	  isSnapshot := true,
-
-      // ensime config
-      ensimeConfig := sexp(
-        // formatter, make sure to keep in sync settings with eclipse settings
-        key(":formatting-prefs"), sexp(
-          key(":alignSingleLineCaseStatements"), true))))
+	  isSnapshot := true))
 
 }

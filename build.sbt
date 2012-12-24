@@ -1,3 +1,5 @@
+scalaVersion := "2.10.0-RC1"
+
 libraryDependencies ++= Seq(
     "org.specs2" %% "specs2" % "1.11" % "test")
 
